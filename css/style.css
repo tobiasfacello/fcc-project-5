@@ -198,7 +198,7 @@ p {
 
 .container__sobre-mi-p {
     font-size: 29.4px;
-    text-align: justify;
+    text-align: center;
     margin: 50px 150px;
     padding: 25px 50px;
 }
@@ -306,7 +306,6 @@ p {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-
 }
 
 .container__contacto-ul a:hover,
@@ -399,12 +398,468 @@ footer .copyright {
 
 /* Responsive Web Design */
 
-@media screen and (min-width: 780px) and (max-width: 1150px) {
+@media screen and (min-width: 780px) and (max-width: 1285px) {
+
+    header {
+        min-height: 100vh;
+        height: 100vh;
+    }
+    
+    header p {
+        color: var(--d-color); 
+    }
+    
+ 
+       
+    .navbar-container {
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        align-items: center;
+        width: 98.7vw;
+        top: 0;
+        height: 55px;
+        background-color: var(--midnight-blue);
+        color: var(--font-color);
+        border-bottom: 1px solid var(--one-color);
+        z-index: 10;
+    } 
+    
+    .navbar__author {
+        display: inline-block;
+        font-size: 30px;
+    }
+    
+    .navbar__author-a {
+        display: block;
+        padding: 10px 23.5px;
+        text-decoration: none;
+        color: var(--font-color);
+    }
+        
+    .navbar__ul {
+        font-size: 20px;
+    }
+    
+    .navbar__ul li {
+        display: inline-block;
+        margin-left: 5px;
+    }
+    
+    .navbar__ul li a {
+        display: block;
+        padding: 13px 10px;
+    }
+        
+    
+    
+    .perfil {
+        display: flex;
+        width: 50vw;
+        margin: 0 auto;
+        padding-top: 12vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .perfil h1 {
+        font-size: 55px;
+        color: var(--f-color);
+        text-shadow: var(--text-shadow);
+        letter-spacing: 1.3px;
+    }
+    
+    .perfil__img {
+        max-width: 100%;
+        height: 200px;
+        width: 200px;
+        border: 5px double var(--d-color);
+        border-radius: 50%;
+    }
+    
+    .perfil__desc {
+        font-size: 20px;
+    }
+    
+    .perfil__portfolio {
+        display: inline;
+        background-color: var(--midnight-blue);
+        color: var(--font-color);
+        text-decoration: none;
+        text-align: center;
+        line-height: 35px;
+        width: 120px;
+    }
+    
+    
+    
+    .redes {
+        display: flex;
+        width: 35vw;
+        margin-top: 20px;
+        justify-content: space-evenly;
+        align-content: center;
+        list-style: none;
+    }
+    
+    .redes__social {
+        color: var(--font-color);
+        align-items: center;
+        text-decoration: none;
+    }
+        
+    
+    
+    .content__nav-links {
+        background-color: var(--midnight-blue);
+        text-align: center;
+        font-size: 45px;
+        border-radius: 5px;
+    }
+    
+    
+    
+    .container__sobre-mi {
+        padding-top: 10vh;
+    }
+    
+    .container__sobre-mi-h2 {
+        margin: 0 450px;
+        color: var(--f-color);
+        text-shadow: var(--text-shadow);
+    }
+    
+    .container__sobre-mi-p {
+        font-size: 25px;
+        text-align: center;
+        margin: 35px 180px;
+        padding: 25px 50px;
+    }
+    
+    
+    
+    .container__conocimientos {
+        padding-top: 10vh;
+        text-align: center;
+    }
+    
+    .container__conocimientos-h2 {
+        margin: 0 360px;
+        color: var(--f-color);
+        text-shadow: var(--text-shadow);
+    }
+    
+    .container__conocimientos-p {
+        font-size: 25px;
+        text-align: center;
+        margin: 35px 180px;
+        padding: 25px 50px;
+    }
+    
+    .container__conocimientos-ul {
+        display: flex;
+        width: 30vw;
+        justify-content: space-evenly;
+        align-content: center;
+        margin: 50px auto;
+        list-style: none;
+    }
+
+
+
+    .container__proyectos {
+        padding-top: 10vh;
+        align-content: center;
+    }
+    
+    .container__proyectos-h2 {
+        margin: 0 400px;
+        padding-bottom: 7px;
+        color: var(--f-color);
+        text-shadow: var(--text-shadow);
+    }
+    
+    
+    
+    .container__contacto {
+        padding-top: 10vh;
+        text-align: center;
+    }
+    
+    .container__contacto-h2 {
+        margin: 0 400px;
+        color: var(--f-color);
+        text-shadow: var(--text-shadow);
+    }
+    
+    .container__contacto-p {
+        font-size: 25px;
+        text-align: center;
+        margin: 35px 180px;
+        padding: 25px 50px;
+    }
+    
+    .container__contacto-ul {
+        display: flex;
+        width: 30vw;
+        justify-content: space-evenly;
+        align-content: center;
+        margin: 50px auto;
+        list-style: none;
+    }
+    
+    .container__contacto-ul a {
+        color: var(--one-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+    }
+
+}
+
+@media screen and (min-width: 780px) and (max-width: 1185px) {
 
 }
 
 @media screen and (min-width: 480px) and (max-width: 780px) {
     
+    header {
+        min-height: 100vh;
+        height: 100vh;
+    }
+    
+    header p {
+        color: var(--d-color); 
+    }
+    
+ 
+       
+    .navbar-container {
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        align-items: center;
+        width: 97.0vw;
+        top: 0;
+        height: 55px;
+        background-color: var(--midnight-blue);
+        color: var(--font-color);
+        border-bottom: 1px solid var(--one-color);
+        z-index: 10;
+    } 
+    
+    .navbar__author {
+        display: inline-block;
+        font-size: 20px;
+    }
+    
+    .navbar__author-a {
+        display: block;
+        padding: 15px 23.5px;
+        text-decoration: none;
+        color: var(--font-color);
+    }
+        
+    .navbar__ul {
+        font-size: 10px;
+    }
+    
+    .navbar__ul li {
+        display: inline-block;
+        margin-left: 5px;
+    }
+    
+    .navbar__ul li a {
+        display: block;
+        padding: 20px 5px;
+    }
+    
+    .navbar__ul li a:hover {
+        animation: hover-navbar 1s both;
+    }
+    
+    .navbar__ul a {
+        text-decoration: none;
+        color: var(--font-color);   
+    }
+    
+    
+    
+    .perfil {
+        display: flex;
+        width: 90vw;
+        margin: 0 auto;
+        padding-top: 10vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .perfil h1 {
+        font-size: 50px;
+        color: var(--f-color);
+        text-shadow: var(--text-shadow);
+        letter-spacing: 1.3px;
+    }
+    
+    .perfil__img {
+        max-width: 100%;
+        height: 200px;
+        width: 200px;
+        border: 5px double var(--d-color);
+        border-radius: 50%;
+    }
+    
+    .perfil__desc {
+        font-size: 20px;
+    }
+    
+    .perfil__portfolio {
+        display: inline;
+        background-color: var(--midnight-blue);
+        color: var(--font-color);
+        text-decoration: none;
+        text-align: center;
+        line-height: 35px;
+        width: 120px;
+    }
+    
+    
+    
+    .redes {
+        display: flex;
+        width: 60vw;
+        margin-top: 20px;
+        justify-content: space-evenly;
+        align-content: center;
+        list-style: none;
+    }
+    
+    .redes__social {
+        color: var(--font-color);
+        align-items: center;
+        text-decoration: none;
+    }
+        
+    
+    
+    .main-container {
+        display: block;
+        background-color: var(--d-color);
+    }
+    
+    .main-container > div {
+        background-color: var(--c-color);
+    }
+    
+    .content__nav-links {
+        background-color: var(--midnight-blue);
+        text-align: center;
+        font-size: 35px;
+        border-radius: 5px;
+    }
+    
+    
+    
+    .container__sobre-mi {
+        padding-top: 10vh;
+    }
+    
+    .container__sobre-mi-h2 {
+        margin: 0 80px;
+        color: var(--f-color);
+        text-shadow: var(--text-shadow);
+    }
+    
+    .container__sobre-mi-p {
+        font-size: 17.5px;
+        text-align: center;
+        margin: 35px;
+        padding: 25px;
+    }
+    
+    
+    
+    .container__conocimientos {
+        padding-top: 10vh;
+        text-align: center;
+    }
+    
+    .container__conocimientos-h2 {
+        margin: 0 40px;
+        color: var(--f-color);
+        text-shadow: var(--text-shadow);
+    }
+    
+    .container__conocimientos-p {
+        font-size: 17.5px;
+        text-align: center;
+        margin: 25px;
+        padding: 25px;
+    }
+    
+    .container__conocimientos-ul {
+        display: flex;
+        width: 50vw;
+        justify-content: space-between;
+        align-content: center;
+        margin: 50px auto;
+        list-style: none;
+    }
+
+    .container__proyectos {
+        padding-top: 10vh;
+        align-content: center;
+    }
+    
+    .container__proyectos-h2 {
+        margin: 0 70px;
+        padding-bottom: 7px;
+        color: var(--f-color);
+        text-shadow: var(--text-shadow);
+    }
+    
+    
+    
+    .container__contacto {
+        padding-top: 10vh;
+        text-align: center;
+    }
+    
+    .container__contacto-h2 {
+        margin: 0 80px;
+        color: var(--f-color);
+        text-shadow: var(--text-shadow);
+    }
+    
+    .container__contacto-p {
+        font-size: 17.5px;
+        text-align: center;
+        margin: 25px;
+        padding: 25px;
+    }
+    
+    .container__contacto-ul {
+        display: flex;
+        width: 60vw;
+        justify-content: space-evenly;
+        align-content: center;
+        margin: 50px auto;
+        list-style: none;
+    }
+    
+    .container__contacto-ul a {
+        color: var(--one-color);
+        display: flex;  
+        flex-direction: column;
+        text-decoration: none;
+        align-items: center;
+    }
+
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
