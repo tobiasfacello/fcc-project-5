@@ -314,7 +314,8 @@ p {
 }
 
 footer {
-    padding: 10px 20px;
+    margin-top: -50px;
+    padding: 30px 20px;
     text-align: center;
     color: var(--d-color);
     background-color: #111;
