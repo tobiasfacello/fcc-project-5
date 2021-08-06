@@ -1,7 +1,7 @@
 :root {
     --bcgd-color: #1f2c38;
     --midnight-blue: #2c3e50;
-    --wet-asphalt:  #34495e;
+    --wet-asphalt: #34495e;
     --font-color: #95a5a6;
     --c-color: #ccc;
     --d-color: #ddd;
@@ -10,7 +10,7 @@
     --html-color: #E44D26;
     --css-color: #2565AE;
     --js-color: #f2d620;
-    --text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+    --text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
 }
 
 * {
@@ -32,7 +32,7 @@ header {
 }
 
 header p {
-    color: var(--d-color); 
+    color: var(--d-color);
 }
 
 p {
@@ -56,7 +56,7 @@ p {
     color: var(--font-color);
     border-bottom: 1px solid var(--one-color);
     z-index: 10;
-} 
+}
 
 .navbar__author {
     display: inline-block;
@@ -71,7 +71,7 @@ p {
 }
 
 .navbar__author-a:hover {
-    animation: hover-navbar 1s both; 
+    animation: hover-navbar 1s both;
 }
 
 .navbar__ul {
@@ -94,7 +94,7 @@ p {
 
 .navbar__ul a {
     text-decoration: none;
-    color: var(--font-color);   
+    color: var(--font-color);
 }
 
 
@@ -161,7 +161,7 @@ p {
 }
 
 .redes__social:hover,
-.redes__social > i:hover {
+.redes__social>i:hover {
     animation: hover-redes 0.5s both;
 }
 
@@ -173,7 +173,7 @@ p {
     background-color: var(--d-color);
 }
 
-.main-container > div {
+.main-container>div {
     background-color: var(--c-color);
 }
 
@@ -243,17 +243,17 @@ p {
 }
 
 .skills__a-html:hover,
-.skills__a-html > i:hover {
+.skills__a-html>i:hover {
     animation: hover-skills-html 0.7s both;
 }
 
 .skills__a-css:hover,
-.skills__a-css > i:hover {
+.skills__a-css>i:hover {
     animation: hover-skills-css 0.7s both;
 }
 
 .skills__a-js:hover,
-.skills__a-js > i:hover {
+.skills__a-js>i:hover {
     animation: hover-skills-js 0.7s both;
 }
 
@@ -309,7 +309,7 @@ p {
 }
 
 .container__contacto-ul a:hover,
-.container__contacto-ul a > i:hover {
+.container__contacto-ul a>i:hover {
     animation: hover-contacto 0.7s both;
 }
 
@@ -328,18 +328,16 @@ footer .copyright {
 }
 
 @keyframes hover-contacto {
-    0% {
+    0% {}
 
-    }
     100% {
         color: var(--wet-asphalt);
     }
 }
 
 @keyframes hover-navbar {
-    0% {
-        
-    }
+    0% {}
+
     100% {
         color: var(--wet-asphalt);
         background-color: var(--d-color);
@@ -350,30 +348,31 @@ footer .copyright {
     0% {
         color: var(--font-color);
     }
+
     100% {
         color: var(--d-color);
     }
 }
 
 @keyframes hover-skills-html {
-    0% {
-    }
+    0% {}
+
     100% {
         color: var(--html-color);
     }
 }
 
 @keyframes hover-skills-css {
-    0% {
-    }
+    0% {}
+
     100% {
         color: var(--css-color);
     }
 }
 
 @keyframes hover-skills-js {
-    0% {
-    }
+    0% {}
+
     100% {
         color: var(--js-color);
     }
@@ -381,14 +380,16 @@ footer .copyright {
 
 @keyframes tracking-in-expand {
     0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
+        letter-spacing: -0.5em;
+        opacity: 0;
     }
+
     40% {
-      opacity: 0.6;
+        opacity: 0.6;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
 }
 
@@ -399,43 +400,43 @@ footer .copyright {
 
 /* Responsive Web Design */
 
-@media screen and (min-width: 780px) and (max-width: 1285px) {
+@media screen and (min-width: 1185px) and (max-width: 1280px) {
 
     .navbar-container {
         width: 98.7vw;
-    } 
-    
+    }
+
     .navbar__author {
         font-size: 30px;
     }
-    
+
     .navbar__author-a {
         padding: 10px 23.5px;
     }
-        
+
     .navbar__ul {
         font-size: 20px;
     }
-    
+
     .navbar__ul li {
         margin-left: 5px;
     }
-    
+
     .navbar__ul li a {
         padding: 13px 10px;
     }
-        
-    
-    
+
+
+
     .perfil {
         width: 50vw;
         padding-top: 12vh;
     }
-    
+
     .perfil h1 {
         font-size: 50px;
     }
-    
+
     .perfil__img {
         max-width: 100%;
         height: 200px;
@@ -443,101 +444,101 @@ footer .copyright {
         border: 5px double var(--d-color);
         border-radius: 50%;
     }
-    
+
     .perfil__desc {
         font-size: 20px;
     }
-    
+
     .perfil__portfolio {
         line-height: 35px;
         width: 120px;
     }
-    
-    
-    
+
+
+
     .redes {
         width: 35vw;
         margin-top: 20px;
     }
-            
-    
-    
+
+
+
     .content__nav-links {
         font-size: 45px;
     }
-    
-    
-        
+
+
+
     .container__sobre-mi-h2 {
         margin: 0 450px;
     }
-    
+
     .container__sobre-mi-p {
         font-size: 25px;
         margin: 35px 180px;
         padding: 25px 50px;
     }
-    
-    
-        
+
+
+
     .container__conocimientos-h2 {
         margin: 0 360px;
     }
-    
+
     .container__conocimientos-p {
         font-size: 25px;
         margin: 35px 180px;
         padding: 25px 50px;
     }
-    
+
     .container__conocimientos-ul {
         width: 30vw;
     }
 
 
-    
+
     .container__proyectos-h2 {
         margin: 0 400px;
     }
-    
-    
+
+
 
     .container__contacto-h2 {
         margin: 0 400px;
     }
-    
+
     .container__contacto-p {
         font-size: 25px;
         margin: 35px 180px;
         padding: 25px 50px;
     }
-    
+
     .container__contacto-ul {
         width: 30vw;
     }
-    
+
 }
 
-@media screen and (min-width: 780px) and (max-width: 1185px) {
-    
+@media screen and (min-width: 768px) and (max-width: 1185px) {
+
     .navbar__author {
         font-size: 25px;
     }
-    
+
     .navbar__author-a {
         padding: 14px 20px;
     }
-        
+
     .navbar__ul {
         font-size: 15px;
     }
-    
+
     .navbar__ul li a {
         padding: 18px 10px;
     }
-        
-    
-    
+
+
+
     .perfil {
         width: 80vw;
     }
@@ -549,173 +550,173 @@ footer .copyright {
     .redes {
         width: 50vw;
     }
-            
-    
-    
+
+
+
     .content__nav-links {
         font-size: 40px;
     }
-    
-    
-    
+
+
+
     .container__sobre-mi-h2 {
         margin: 0 250px;
     }
-    
+
     .container__sobre-mi-p {
         font-size: 20px;
         margin: 35px 80px;
         padding: 25px 50px;
     }
-    
-    
-    
+
+
+
     .container__conocimientos-h2 {
         margin: 0 175px;
     }
-    
+
     .container__conocimientos-p {
         font-size: 20px;
         margin: 35px 80px;
         padding: 25px 50px;
     }
-    
+
     .container__conocimientos-ul {
         width: 50vw;
     }
 
 
-    
+
     .container__proyectos-h2 {
         margin: 0 210px;
     }
-    
-    
-        
+
+
+
     .container__contacto-h2 {
         margin: 0 220px;
     }
-    
+
     .container__contacto-p {
         font-size: 20px;
         margin: 35px 80px;
         padding: 25px 50px;
     }
-    
+
     .container__contacto-ul {
         width: 50vw;
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 780px) {
-           
+@media screen and (min-width: 480px) and (max-width: 768px) {
+
     .navbar-container {
         width: 97.5vw;
-    } 
-    
+    }
+
     .navbar__author {
         font-size: 20px;
     }
-    
+
     .navbar__author-a {
         padding: 15px 20px;
     }
-        
+
     .navbar__ul {
         font-size: 10px;
     }
-    
+
     .navbar__ul li {
         margin-left: 5px;
     }
-    
+
     .navbar__ul li a {
         padding: 20px 5px;
     }
-    
 
-    
+
+
     .perfil {
         height: 100vh;
         width: 80vw;
     }
-    
+
     .perfil h1 {
         font-size: 40px;
     }
-    
-    
-    
+
+
+
     .redes {
         width: 60vw;
         margin-top: 20px;
     }
-            
 
-    
+
+
     .content__nav-links {
         font-size: 35px;
     }
-    
-    
-    
+
+
+
     .container__sobre-mi-h2 {
         margin: 0 80px;
     }
-    
+
     .container__sobre-mi-p {
         font-size: 17.5px;
         margin: 35px;
         padding: 25px;
     }
-    
-    
-    
+
+
+
     .container__conocimientos-h2 {
         margin: 0 40px;
     }
-    
+
     .container__conocimientos-p {
         font-size: 17.5px;
         margin: 25px;
         padding: 25px;
     }
-    
+
     .container__conocimientos-ul {
         width: 50vw;
     }
 
 
-    
+
     .container__proyectos-h2 {
         margin: 0 70px;
     }
-    
-    
-        
+
+
+
     .container__contacto-h2 {
         margin: 0 80px;
     }
-    
+
     .container__contacto-p {
         font-size: 17.5px;
         margin: 25px;
         padding: 25px;
     }
-    
+
     .container__contacto-ul {
         width: 55vw;
     }
 
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    
+@media only screen and (min-device-width : 0px) and (max-device-width : 480px) {
+
     header {
         min-height: 90vh;
         max-height: 100vh;
     }
-    
+
     .navbar-container {
         flex-direction: column;
         justify-content: space-around;
@@ -727,19 +728,19 @@ footer .copyright {
     .navbar__author {
         font-size: 50px;
     }
-    
+
     .navbar__author-a {
         padding: 30px;
     }
-        
+
     .navbar__ul {
         font-size: 40px;
     }
-    
+
     .navbar__ul li a {
         padding: 15px 10px;
-    }    
-    
+    }
+
 
 
     .perfil {
@@ -747,121 +748,121 @@ footer .copyright {
         width: 80vw;
         padding-top: 15vh;
     }
-    
+
     .perfil h1 {
         font-size: 90px;
     }
-    
+
     .perfil__img {
         padding: auto;
         height: 400px;
         width: 400px;
     }
-    
+
     .perfil__desc {
         font-size: 60px;
         line-height: 90px;
     }
-    
+
     .perfil__portfolio {
         width: 420px;
         margin: 50px;
         line-height: 75px;
         font-size: 50px;
     }
-    
+
     .redes {
         margin: 50px auto;
         width: 80vw;
         justify-content: space-evenly;
         font-size: 2.5em;
     }
-    
 
-    
+
+
     .content__nav-links {
         font-size: 100px;
     }
-    
+
 
 
     .container__sobre-mi {
         padding-top: 15.5vh;
     }
-    
+
     .container__sobre-mi-h2 {
         margin: 0 200px;
     }
-    
+
     .container__sobre-mi-p {
         font-size: 60px;
         line-height: 85px;
         margin-top: 100px;
         padding: 85px 0;
     }
-    
+
 
 
     .container__conocimientos {
         padding-top: 15.5vh;
     }
-    
+
     .container__conocimientos-h2 {
         margin: 0 55px;
     }
-    
+
     .container__conocimientos-p {
         font-size: 60px;
         line-height: 85px;
         margin-top: 100px;
         padding: 85px 0;
     }
-    
+
     .container__conocimientos-ul {
         width: 55vw;
         justify-content: space-between;
         font-size: 2.5em;
     }
- 
+
 
 
     .container__proyectos {
         padding-top: 15.5vh;
     }
-    
+
     .container__proyectos-h2 {
         margin: 0 150px;
     }
-    
+
 
 
     .container__contacto {
         padding-top: 15.5vh;
     }
-    
+
     .container__contacto-h2 {
         margin: 0 180px;
     }
-    
+
     .container__contacto-p {
         font-size: 60px;
         line-height: 85px;
         margin-top: 100px;
         padding: 85px 0;
     }
-    
+
     .container__contacto-ul {
         width: 55vw;
         align-items: flex-end;
         font-size: 2.5em;
     }
-    
 
-    
+
+
     footer {
         padding: 40px 20px;
     }
-    
+
     footer .copyright {
         font-size: 30px;
     }
