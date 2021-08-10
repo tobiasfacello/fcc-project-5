@@ -7,9 +7,12 @@
     --d-color: #ddd;
     --f-color: #fff;
     --one-color: #111;
+    --black-color: #212529;
     --html-color: #E44D26;
     --css-color: #2565AE;
     --js-color: #f2d620;
+    --git-color: #F1502F;
+    --terminal-color: #36b532;
     --text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
 }
 
@@ -173,7 +176,7 @@ p {
     background-color: var(--d-color);
 }
 
-.main-container>div {
+.main-container > div {
     background-color: var(--c-color);
 }
 
@@ -225,7 +228,7 @@ p {
 
 .container__conocimientos-ul {
     display: flex;
-    width: 33vw;
+    width: 50vw;
     justify-content: space-evenly;
     align-content: center;
     margin: 50px auto;
@@ -234,7 +237,9 @@ p {
 
 .skills__a-html,
 .skills__a-css,
-.skills__a-js {
+.skills__a-js,
+.skills__a-git,
+.skills__a-terminal {
     color: var(--one-color);
     display: flex;
     flex-direction: column;
@@ -257,6 +262,16 @@ p {
     animation: hover-skills-js 0.7s both;
 }
 
+.skills__a-git:hover,
+.skills__a-git>i:hover {
+    animation: hover-skills-git 0.7s both;
+}
+
+.skills__a-terminal:hover,
+.skills__a-terminal>i:hover {
+    animation: hover-skills-terminal 0.7s both;
+}
+
 
 
 .container__proyectos {
@@ -270,6 +285,61 @@ p {
     color: var(--f-color);
     text-shadow: var(--text-shadow);
 }
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project-tile {
+    width: 62.5vw;
+    height: 80.5vh;
+    margin: 20px auto;
+    background-color: var(--bcgd-color);
+    border: 2px solid var(--bcgd-color);
+    border-radius: 5px;
+}
+
+.project-tile img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.project-container__h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    padding: 5px 0;
+    text-align: center;
+    color: var(--d-color);
+}
+
+.project-container__div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project-container__div-button {
+    padding: 10px 0;
+    background-color: var(--midnight-blue);
+    border: 1px solid var(--midnight-blue);
+    border-radius: 3px;
+}
+
+.project-container__div-a {
+    padding: 10px 30px;
+    color: var(--font-color);
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.project-container__div-a:hover {
+    animation: hover-navbar 0.7s both;
+}
+
 
 
 
@@ -375,6 +445,22 @@ footer .copyright {
 
     100% {
         color: var(--js-color);
+    }
+}
+
+@keyframes hover-skills-git {
+    0% {}
+
+    100% {
+        color: var(--git-color);
+    }
+}
+
+@keyframes hover-skills-terminal {
+    0% {}
+
+    100% {
+        color: var(--terminal-color);
     }
 }
 
@@ -501,6 +587,16 @@ footer .copyright {
         margin: 0 400px;
     }
 
+    .project-tile {
+        height: 77vh;
+        padding: auto;
+        margin: 10px auto;
+    }
+
+    .project-container__h3 {
+        font-size: 15px;
+    }
+
 
 
     .container__contacto-h2 {
@@ -590,6 +686,17 @@ footer .copyright {
     .container__proyectos-h2 {
         margin: 0 210px;
     }
+
+    .project-tile {
+        height: 70.5vh;
+        padding: auto;
+        margin: 10px auto;
+    }
+
+    .project-container__h3 {
+        font-size: 13px;
+    }
+
 
 
 
@@ -690,6 +797,16 @@ footer .copyright {
 
     .container__proyectos-h2 {
         margin: 0 70px;
+    }
+
+    .project-tile {
+        height: 51vh;
+        padding: auto;
+        margin: 10px auto;
+    }
+
+    .project-container__h3 {
+        font-size: 13px;
     }
 
 
@@ -819,9 +936,9 @@ footer .copyright {
     }
 
     .container__conocimientos-ul {
-        width: 55vw;
+        width: 75vw;
         justify-content: space-between;
-        font-size: 2.5em;
+        font-size: 2.0em;
     }
 
 
@@ -832,6 +949,33 @@ footer .copyright {
 
     .container__proyectos-h2 {
         margin: 0 150px;
+    }
+
+    .project-tile {
+        width: 70vw;
+        height: 35vh;
+        padding: auto;
+        margin: 30px auto;
+    }
+
+    .project-container__h3 {
+        font-size: 40px;
+        word-spacing: 3px;
+    }
+
+    .project-container__div-button {
+        padding: 30px 0;
+        background-color: var(--midnight-blue);
+        border: 1px solid var(--midnight-blue);
+        border-radius: 3px;
+    }
+    
+    .project-container__div-a {
+        padding: 30px 50px;
+        font-size: 30px;
+        color: var(--font-color);
+        border-radius: 3px;
+        text-decoration: none;
     }
 
 
